@@ -1,58 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>taskflow-project</title>
+    <title>Taskflow Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Taskflow</h1>
-    <p>Gestor de tareas</p>
 
-    <main>
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Taskflow</h1>
+        <p>Gestor de tareas diarias</p>
+    </header>
 
-        <section>
-            <h2>lista de tareas</h2>
-            <section class="task-list">
-                <div class="task-card">
-                  <h3 class="task-title">Hacer mis practicas</h3>
-                  <span class="task-category">casa</span>
-                  <span class="task-priority high">Alta</span>
-                </div>
-              
-                <div class="task-card">
-                  <h3 class="task-title">Trabajar</h3>
-                  <span class="task-category">casa</span>
-                  <span class="task-priority medium">Alta</span>
-                </div>
-              
-                <div class="task-card">
-                  <h3 class="task-title">Ir al gimnasio</h3>
-                  <span class="task-category">Salud</span>
-                  <span class="task-priority low">media</span>
-                </div>
+    <!-- Contenedor principal -->
+    <div class="layout">
 
-                <div class="task-card">
-                    <h3 class="task-title">Explicar consulta</h3>
-                    <span class="task-category">casa</span>
-                    <span class="task-priority low">Alta</span>
-                  </div>
+        <!-- Contenido principal -->
+        <main>
+            <section>
+                <h2>Lista de tareas</h2>
 
-              </section>
-              
+                <section class="task-list">
 
-        </section>
+                    <div class="task-card">
+                        <h3 class="task-title">Hacer mis prácticas</h3>
+                        <span class="task-category">Casa</span>
+                        <span class="task-priority high">Alta</span>
+                    </div>
 
-     </main>
+                    <div class="task-card">
+                        <h3 class="task-title">Trabajar</h3>
+                        <span class="task-category">Casa</span>
+                        <span class="task-priority medium">Media</span>
+                    </div>
 
-     <div class="layout"></div>
-     <main>
-        <section class="task-list">
-     </main>
-     <aside>
-        <h2>filtros y categorias</h2>
-            <p>Aquí podras filtrar por estado, catrgoria, etc...</p>
-     </aside>
+                    <div class="task-card">
+                        <h3 class="task-title">Ir al gimnasio</h3>
+                        <span class="task-category">Salud</span>
+                        <span class="task-priority low">Baja</span>
+                    </div>
+
+                    <div class="task-card">
+                        <h3 class="task-title">Explicar consulta</h3>
+                        <span class="task-category">Casa</span>
+                        <span class="task-priority low">Baja</span>
+                    </div>
+
+                </section>
+            </section>
+        </main>
+
+        <!-- Panel lateral -->
+        <aside>
+            <h2>Filtros y categorías</h2>
+
+            <div class="filter-block">
+                <h3>Estado</h3>
+                <label><input type="checkbox"> Completadas</label>
+                <label><input type="checkbox"> Pendientes</label>
+                <label><input type="checkbox"> en curso</label>
+            </div>
+
+            <button class="filter-btn">Aplicar filtros</button>
+        </aside>
+
+    </div>
+
 </body>
 </html>
