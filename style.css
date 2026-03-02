@@ -103,5 +103,25 @@
     }
   }
   
+  .task-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: var(--spacing-m);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  }
+  .task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    background: #f9fbff;
+  }
+  .task-card.completed {
+    opacity: 0.7;
+    background: #e8f5e9;
+  }
+      
   
   
